@@ -1,11 +1,284 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello Adhon Vai</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acme Creative — Pro Tools for Creators</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-900 antialiased">
+    <!-- NAV -->
+    <header class="bg-white shadow-sm">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="#" class="flex items-center gap-3">
+          <div
+            class="w-10 h-10 rounded-md bg-gradient-to-br from-indigo-500 to-pink-500 flex items-center justify-center text-white font-bold"
+          >
+            A
+          </div>
+          <div>
+            <h1 class="text-lg font-semibold">Acme Creative</h1>
+            <p class="text-xs text-gray-500">Tools for makers</p>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+          <a href="#products" class="hover:text-indigo-600">Products</a>
+          <a href="#pricing" class="hover:text-indigo-600">Pricing</a>
+          <a href="#enterprise" class="hover:text-indigo-600">Enterprise</a>
+          <a
+            href="#"
+            class="px-4 py-2 rounded-md border border-indigo-600 text-indigo-600 hover:bg-indigo-50"
+            >Sign in</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section
+      class="max-w-7xl mx-auto px-6 py-12 md:py-20 grid gap-10 md:grid-cols-2 items-center"
+    >
+      <div>
+        <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">
+          Create without limits — tools that scale with you
+        </h2>
+        <p class="mt-4 text-lg text-gray-600">
+          Ship stunning visuals, edit professional video, and manage your brand.
+          All in one suite designed for teams and individuals.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a
+            href="#products"
+            class="inline-flex items-center gap-2 px-5 py-3 bg-indigo-600 text-white rounded-md shadow hover:shadow-lg"
+            >Explore products</a
+          >
+          <a
+            href="#pricing"
+            class="inline-flex items-center gap-2 px-5 py-3 border rounded-md text-gray-700 hover:bg-gray-100"
+            >See pricing</a
+          >
+        </div>
+      </div>
+      <div class="relative">
+        <img
+          src="https://via.placeholder.com/800x520?text=Creative+Workspace"
+          alt="Creative workspace"
+          class="rounded-xl shadow-xl"
+        />
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="max-w-7xl mx-auto px-6 py-12">
+      <h3 class="text-2xl font-semibold">Featured products</h3>
+      <p class="mt-2 text-gray-600">
+        Hand-picked apps for creators. Try any product free for 7 days.
+      </p>
+
+      <div class="mt-8 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div
+          class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow"
+        >
+          <img
+            src="https://via.placeholder.com/400x250?text=ProSuite"
+            class="w-full h-44 object-cover"
+          />
+          <div class="p-5">
+            <h4 class="text-lg font-semibold">ProSuite Creative Cloud</h4>
+            <p class="text-sm text-gray-500 mt-1">
+              All the creative tools you need — photo, video, and design
+            </p>
+            <ul class="mt-3 text-sm text-gray-700 space-y-1">
+              <li>• Photo editor</li>
+              <li>• Video composer</li>
+              <li>• Vector design</li>
+              <li>• Cloud storage 100GB</li>
+            </ul>
+            <div class="mt-4 flex items-center justify-between">
+              <div>
+                <div class="text-sm text-gray-500">Monthly</div>
+                <div class="text-xl font-semibold">$29.99</div>
+              </div>
+              <a
+                href="#"
+                class="px-4 py-2 rounded-md bg-indigo-600 text-white text-sm shadow"
+                >Buy</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow"
+        >
+          <img
+            src="https://via.placeholder.com/400x250?text=DesignTool"
+            class="w-full h-44 object-cover"
+          />
+          <div class="p-5">
+            <h4 class="text-lg font-semibold">DesignTool Single App</h4>
+            <p class="text-sm text-gray-500 mt-1">
+              Lightweight vector & UI design for pros
+            </p>
+            <ul class="mt-3 text-sm text-gray-700 space-y-1">
+              <li>• Vector editor</li>
+              <li>• Export presets</li>
+              <li>• Plugin ecosystem</li>
+              <li>• Components</li>
+            </ul>
+            <div class="mt-4 flex items-center justify-between">
+              <div>
+                <div class="text-sm text-gray-500">Monthly</div>
+                <div class="text-xl font-semibold">$9.99</div>
+              </div>
+              <a
+                href="#"
+                class="px-4 py-2 rounded-md bg-indigo-600 text-white text-sm shadow"
+                >Buy</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow"
+        >
+          <img
+            src="https://via.placeholder.com/400x250?text=VideoPro"
+            class="w-full h-44 object-cover"
+          />
+          <div class="p-5">
+            <h4 class="text-lg font-semibold">VideoPro Studio</h4>
+            <p class="text-sm text-gray-500 mt-1">
+              Cutting-edge editing & color grading
+            </p>
+            <ul class="mt-3 text-sm text-gray-700 space-y-1">
+              <li>• Non-linear editor</li>
+              <li>• Color grading</li>
+              <li>• Proxy workflow</li>
+              <li>• GPU acceleration</li>
+            </ul>
+            <div class="mt-4 flex items-center justify-between">
+              <div>
+                <div class="text-sm text-gray-500">Monthly</div>
+                <div class="text-xl font-semibold">$19.99</div>
+              </div>
+              <a
+                href="#"
+                class="px-4 py-2 rounded-md bg-indigo-600 text-white text-sm shadow"
+                >Buy</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section
+      id="pricing"
+      class="max-w-7xl mx-auto px-6 py-12 bg-indigo-50 rounded-lg mx-6"
+    >
+      <h3 class="text-2xl font-semibold">Pricing plans</h3>
+      <p class="mt-2 text-gray-700">Flexible billing for individuals and teams.</p>
+
+      <div class="mt-8 grid gap-6 grid-cols-1 md:grid-cols-3">
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h4 class="text-lg font-semibold">Starter</h4>
+          <p class="text-sm text-gray-500">For solo creators</p>
+          <div class="mt-6 text-3xl font-bold">
+            $9<span class="text-base font-medium">/mo</span>
+          </div>
+          <ul class="mt-4 text-sm space-y-2 text-gray-700">
+            <li>Single app</li>
+            <li>5GB storage</li>
+            <li>Email support</li>
+          </ul>
+          <div class="mt-6">
+            <a
+              href="#"
+              class="w-full inline-flex justify-center px-4 py-2 rounded-md bg-indigo-600 text-white"
+              >Start free</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="bg-white p-6 rounded-xl shadow-lg border-2 border-indigo-200"
+        >
+          <h4 class="text-lg font-semibold">Pro</h4>
+          <p class="text-sm text-gray-500">For professionals & teams</p>
+          <div class="mt-6 text-3xl font-bold">
+            $29<span class="text-base font-medium">/mo</span>
+          </div>
+          <ul class="mt-4 text-sm space-y-2 text-gray-700">
+            <li>All apps</li>
+            <li>100GB storage</li>
+            <li>Priority support</li>
+          </ul>
+          <div class="mt-6">
+            <a
+              href="#"
+              class="w-full inline-flex justify-center px-4 py-2 rounded-md bg-indigo-600 text-white"
+              >Get Pro</a
+            >
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h4 class="text-lg font-semibold">Enterprise</h4>
+          <p class="text-sm text-gray-500">Custom plans & SSO</p>
+          <div class="mt-6 text-3xl font-bold">Contact</div>
+          <ul class="mt-4 text-sm space-y-2 text-gray-700">
+            <li>Unlimited seats</li>
+            <li>Dedicated support</li>
+            <li>Custom SLAs</li>
+          </ul>
+          <div class="mt-6">
+            <a
+              href="#"
+              class="w-full inline-flex justify-center px-4 py-2 rounded-md border"
+              >Contact sales</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mt-12 bg-white">
+      <div
+        class="max-w-7xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-gray-600"
+      >
+        <div>
+          <h5 class="font-semibold text-gray-900">Acme Creative</h5>
+          <p class="mt-2">
+            Built for creators. © <span id="year"></span>
+          </p>
+        </div>
+        <div>
+          <h6 class="font-medium text-gray-900">Product</h6>
+          <ul class="mt-2 space-y-1">
+            <li><a href="#" class="hover:underline">Features</a></li>
+            <li><a href="#" class="hover:underline">Pricing</a></li>
+            <li><a href="#" class="hover:underline">Integrations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h6 class="font-medium text-gray-900">Company</h6>
+          <ul class="mt-2 space-y-1">
+            <li><a href="#" class="hover:underline">About</a></li>
+            <li><a href="#" class="hover:underline">Careers</a></li>
+            <li><a href="#" class="hover:underline">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
+```
